@@ -86,23 +86,12 @@ a:hover {
   animation: rise-in 0.75s cubic-bezier(0.22, 1, 0.36, 1) 0.2s forwards;
 }
 
-.hero-ghost {
-  display: block;
-  width: min(230px, 58vw);
-  height: auto;
-  margin: 36px auto 40px;
-  object-fit: contain;
-  opacity: 0;
-  transform: scale(0.94) translateY(10px);
-  animation: ghost-in 0.85s cubic-bezier(0.22, 1, 0.36, 1) 0.28s forwards;
-  filter: drop-shadow(0 16px 28px rgba(237, 79, 138, 0.22));
-}
-
 .actions {
   display: flex;
   flex-direction: column;
   gap: 12px;
   width: min(320px, 100%);
+  margin-top: 36px;
   opacity: 0;
   transform: translateY(18px);
   animation: rise-in 0.75s cubic-bezier(0.22, 1, 0.36, 1) 0.4s forwards;
@@ -261,13 +250,6 @@ a:hover {
   animation: rise-in 0.6s cubic-bezier(0.22, 1, 0.36, 1) 0.55s forwards;
 }
 
-@keyframes ghost-in {
-  to {
-    opacity: 1;
-    transform: scale(1) translateY(0);
-  }
-}
-
 @keyframes rise-in {
   to {
     opacity: 1;
@@ -285,7 +267,6 @@ a:hover {
 
   .brand,
   .tagline,
-  .hero-ghost,
   .actions,
   .nav,
   .content,
